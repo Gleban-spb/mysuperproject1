@@ -1,0 +1,424 @@
+    1  sudo os-prober
+    2  sudo update-grub
+    3  reboot
+    4  lsblk
+    5  sudo add-apt-repository ppa:danielrichter2007/grub-customizer && sudo apt-get update
+    6  sudo update-grub
+    7  sudo os
+    8  sudo os-prober
+    9  sudo update-grub
+   10  reboot
+   11  exit
+   12  reboot
+   13  pwd
+   14  is -la
+   15  ls -la
+   16  ps
+   17  top
+   18  apt update
+   19  poweroff
+   20  cat
+   21  echo "Привет
+   22  echo "Привет"
+   23  echo path
+   24  echo $path
+   25  which ruby
+   26  echo this is .profile
+   27  echo this is .login
+   28  echo this is .bashrc
+   29  echo this is .bash_profile
+   30  echo path
+   31  echo $path
+   32  cd Desktop/
+   33  ls
+   34  cd !
+   35  cd 'Рабочий стол'
+   36  ls
+   37  ping yandex.ru
+   38  clear
+   39  traceroute
+   40  cd cd /root/documents
+   41  cd 
+   42  cd ./
+   43  ls
+   44  cd 
+   45  cd ./
+   46  ls
+   47  cd /документы
+   48  cd /Документы
+   49  cd ./Документы
+   50  ipconfig
+   51  ifconfig
+   52  traceroute yandex.ru
+   53  ip a
+   54  history
+   55  ls
+   56  clear
+   57  echo $home
+   58  echo $PATH
+   59  vim
+   60  vim test.txt
+   61  cat test.txt
+   62  vim test.txt
+   63  cat test.txt
+   64  vim test.txt
+   65  cat test.txt
+   66  vim test.txt
+   67  cat test.txt
+   68  vim test.txt
+   69  cat test.txt
+   70  ls
+   71  vim test.txt
+   72  cat test.txt
+   73  ls
+   74  vim test.txt
+   75  cat test.txt
+   76  vim test.txt
+   77  exit
+   78  % jobs
+   79  exit
+   80  % jobs -s |kill %1
+   81  % jobs
+   82  % jobs -l
+   83  cat test.txt
+   84  exit
+   85  vim test.txt
+   86  % jobs -l
+   87  % jobs
+   88  job man
+   89  job 
+   90  %
+   91  % exit
+   92  exit
+   93  cat test.txt
+   94  ls
+   95  cd 
+   96  ls
+   97  cd ./Документы
+   98  ls
+   99  cat test.txt
+  100  which ruby
+  101  which neqn
+  102  vi intro
+  103  ch intro
+  104  sh intro
+  105  vi intro
+  106  chmod +x intro
+  107  ./intro
+  108  cat intro
+  109  echo /help
+  110  echo /man
+  111  history >his.txt
+  112  export var=losst
+  113  echo rerer $losst
+  114  export VAR=losst
+  115  echo rerer $VAR
+  116  vimtutor
+  117  man vim
+  118  man cd
+  119  man ls
+  120  man dir
+  121  poweroff
+  122  vimtutor
+  123  python3
+  124  date
+  125  cal
+  126  calc_stat 
+  127  df
+  128  cal -y
+  129  free
+  130  pwd
+  131  ls
+  132  poweroff
+  133  sd ./Документы
+  134  cd ./Документы
+  135  ls
+  136  vim t
+  137  vim test.txt
+  138  ls
+  139  cat test.txt
+  140  vim test.txt
+  141  vim vim.txt
+  142  vim security_mentoring.txt
+  143  vim vim.txt
+  144  poweroff
+  145  vimtutor
+  146  cd ./Документы
+  147  arch
+  148  banner denix
+  149  clear
+  150  date
+  151  date %a
+  152  man date
+  153  date +%a
+  154  date +%A
+  155  date +%H
+  156  date +%T
+  157  date
+  158  echo date
+  159  date
+  160  touch file.txt
+  161  date >file.txt
+  162  hi
+  163  history >his.txt
+  164  poweroff
+  165  nmap
+  166  whois 10.208.152.218
+  167  whois 207.171.166.49
+  168  nmap 192.168.0.111
+  169  nmap 192.168.0.0-255
+  170  nmap -sS -p- -PS80,22 -n -T4 -vvv --reason 192.168.0.111
+  171  nmap -O 192.168.0.111
+  172  nmap 192.168.0.111
+  173  nmap -A 192.168.0.111
+  174  nmap 192.168.0.113
+  175  nmap 192.168.0.121
+  176  nmap -sS -p- -PS80,22 -n -T4 -vvv --reason 192.168.0.121
+  177  kdesu nmap -sS -p- -PS80,22 -n -T4 -vvv --reason 192.168.0.121
+  178  sudo -i
+  179  spiderfoot
+  180  spiderfoot --help
+  181  spiderfoot -l 127.0.0.1:5001
+  182  poweroff
+  183  cd
+  184  dir
+  185  cd ./Документы
+  186  sudo -i
+  187  smbd
+  188  ls
+  189  cd ./Документы
+  190  sudo -i
+  191  poweroff
+  192  cd ./Документы
+  193  sudo -i
+  194  poweroff
+  195  git
+  196  git --version
+  197  git config --global user.name "Gleb Drapkin"
+  198  git config --global user.email "Gleb_D@mail.ru"
+  199  git config -l
+  200  cat git.config
+  201  cat gitconfig
+  202  -la
+  203  ls
+  204  ls -la
+  205  cat .gitconfig
+  206  cd myproject/
+  207  cd /?
+  208  cd //?
+  209  man cd
+  210  cd /help
+  211  mkdir myproject
+  212  cd myproject/
+  213  ll
+  214  git init .
+  215  git status
+  216  echo "Source file" file1.txt
+  217  git status
+  218  echo "Source file1" file1.txt
+  219  git status
+  220  l
+  221  ss
+  222  ll
+  223  echo "Source file1" file1.txt
+  224  ll
+  225  echo "Source file1" >file1.txt
+  226  git status
+  227  echo "Source file2" >file2.txt
+  228  git status
+  229  git *
+  230  git add *
+  231  git status
+  232  echo "Source file3" >file3.txt
+  233  git status
+  234  git .
+  235  git *
+  236  git add
+  237  git add *
+  238  git status
+  239  vim text1.txt
+  240  git status
+  241  git add *
+  242  git status
+  243  git commit -m "Добавлен файл text1.txt"
+  244  git status
+  245  ll
+  246  ls
+  247  git status
+  248  vim text2.txt
+  249  git commit -m "Добавлен файл text2.txt"
+  250  git add *
+  251  git commit -m "Добавлен файл text2.txt"
+  252  git status
+  253  git log
+  254  git log -1
+  255  git log -1 -p
+  256  vim text3.txt
+  257  git add .
+  258  git commit -m "Добавлен файл text3.txt"
+  259  git log
+  260  git log -1 -p
+  261  vim text3.txt
+  262  git commit -m "Добавлены изменени в файл text3.txt"
+  263  git log -1 -p
+  264  git status
+  265  git add .
+  266  git log -1 -p
+  267  git status
+  268  vim text3.txt
+  269  git status
+  270  cat text3.txt
+  271  git checkout --tetxt3.txt
+  272  git checkout -- text3.txt
+  273  git status
+  274  vim text4.txt
+  275  git status
+  276  vim text4.txt
+  277  git status
+  278  git add .
+  279  git status
+  280  git dif --staged
+  281  git diff --staged
+  282  echo "ZZZZZZ" >zzzzz.log
+  283  ls .gitignore
+  284  vim .gitignore
+  285  git status
+  286  git add .
+  287  git status
+  288  git commit -m "Вставка Игнора логов"
+  289  vim .gitignore
+  290  git status
+  291  git commit -m "Вставка Игнора логов"
+  292  git add .
+  293  git commit -m "Вставка Игнора логов"
+  294  echo "ZZZZZZ" >zzz2222zz.log
+  295  git status
+  296  echo "ZZZZZZ" >zzz2222zz.lag
+  297  git status
+  298  git clone https://github.com/Gleban-spb/mysuperproject1.git
+  299  ll
+  300  cd mysuperproject1/
+  301  echo "hello" >text1.txt
+  302  ll
+  303  git stasus
+  304  git status
+  305  git add .
+  306  git status
+  307  git commit -m "Мой первый commit"
+  308  git push origin
+  309  git status
+  310  git push origin
+  311  git remote add origin https://github/Gleban-spb/mysuperprogect1.git
+  312  vim text1
+  313  git push origin
+  314  cd
+  315  pwd
+  316  ll ~/.ssh/
+  317  ll -/.ssh/
+  318  ll 
+  319  ssh -keygen
+  320  ssh-keygen
+  321  ll -/.ssh/
+  322  ll ~/.ssh/
+  323  cat id_rsa.pub
+  324  ll
+  325  cd ~/.ssh/
+  326  cat id_rsa.pub
+  327  git remote -v
+  328  cd .
+  329  c ./
+  330  c ../
+  331  c ..
+  332  cd //
+  333  cd ..
+  334  ll
+  335  pwd
+  336  ls 
+  337  ls
+  338  cd /usr
+  339  ls
+  340  cd /home/user/myproject
+  341  ls
+  342  cd /mysuperproject1
+  343  ls
+  344  cd ./mysuperproject1
+  345  git remote -v
+  346  git remote set-url origin git@github.com:Gleban-spb/mysuperproject1.git
+  347  git remote -v
+  348  ll
+  349  git status
+  350  ll
+  351  echo "helloll >text1.txt\nll\nls\nexit\nc\nZ\nzz\nc\n''\n""\n'\n"
+  352  echo "hello1" >text1.txt\nll\nls\nexit\nc\nZ\nzz\nc\n''\n""\n'\n"\n"\n"\n"\nexit\n"\n\n"\n'
+  353  ll
+  354  cd /home/user/myproject
+  355  cd ./mysuperproject1
+  356  ll
+  357  echo "hello1" >text2.txt
+  358  ll
+  359  echo "hello31" >text3.txt
+  360  git status
+  361  git add .
+  362  git commit -m "пара файлов"
+  363  git push origin
+  364  git status
+  365  git add .
+  366  git commit -m "Шпаргалка по vim"
+  367  git push origin
+  368  git remote -v
+  369  git status
+  370  ls
+  371  git
+  372  git pull
+  373  ls
+  374  git status
+  375  git add .
+  376  git commit -m "Переименовал Японскую мудрость в Japan"
+  377  git push origin
+  378  git log
+  379  history >hist_20200927.txt
+  380  git status
+  381  git add .
+  382  git commit -m "Добавил историю 20220927"
+  383  git push origin
+  384  poweroff
+  385  git log
+  386  cd
+  387  cd /home/user/myproject
+  388  cd .
+  389  cd ./mysuperproject1 
+  390  ll
+  391  git 
+  392  git status
+  393  git log
+  394  git commit --amend
+  395  git log
+  396  history >hist_20200927.txt
+  397  git commit --amend
+  398  git log
+  399  git status
+  400  git add .
+  401  git status
+  402  git push origin
+  403  git pull
+  404  git status
+  405  git pull
+  406  git config pull.rebase true
+  407  git status
+  408  git config pull.rebase false
+  409  git status
+  410  git pull
+  411  history >hist_20200927.txt
+  412  git add .
+  413  git commit -m "Добавил историю 2022_09_27"
+  414  git push origin
+  415  git reset -hard HEAD~
+  416  git log
+  417  git reset -hard HEAD~2
+  418  git reset --hard HEAD~
+  419  gi log
+  420  git log
+  421  git reset --hard HEAD~
+  422  git push origin
+  423  git pull
+  424  ll
