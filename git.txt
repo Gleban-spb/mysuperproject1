@@ -1,7 +1,7 @@
-git pull
-history >hist_20200927.txt
-git status
-git add .
-git commit -m "Добавил историю 20220927"
-git push origin
-git log --pretty=oneline
+git pull #Загрузил файлы из интернета
+history >hist_20200927.txt #Создал новый файл
+git status #Проверил изменения
+git add . #Добавил изменения 
+git commit -m "Добавил историю 20220927"  #Создал новый комит с комментом
+git push origin #Выгрузил изменения в интернет
+git log --pretty=oneline #проверил лог укороченный вариант
