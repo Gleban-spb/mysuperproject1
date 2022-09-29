@@ -15,8 +15,19 @@ git status
 #проверить статус
 
 
-Если нужна работа через git.com
-Создать ноый аккаунт на git.com
+Если нужна работа через github.com
+Создать ноый аккаунт на github.com
+Загрузка нового проекта в интернет (через http НЕ РАБОТАЕТ!!! нужно испльзовать SSH ключ)
+ssh-keygen
+#Создастся два ключа, нам нужен id_rsa.pub
+cat ~/.ssh/id_rsa.pub
+Копируем содержимое в буфер обмена. Идем на сайт github.com -> Setting-->SSH and GPG keys --> создаем новый SSH key (Title - MyKey BIGcomp, в поле key вставляем текст из буфера обмена)--> Add SSH Key
+cd ./mysuperproject1
+git remote -v
+git remote set-url origin git@github.com:Gleban-spb/mysuperproject1.git
+git remote -v
+ll
+git status
 
 git pull #Загрузить файлы из интернета
 history >hist_20200927.txt #Создать новый файл
@@ -31,3 +42,9 @@ git log -1 -p полный лог последнего изменения
 git diff --staged #Показывет последние изменения
 
 в файл .gitignore можно записать файлы , или папки, коорые хотим игнрировать!!! (например *.log  logs/)
+
+Загрузка нового проекта из интернета
+
+
+
+
