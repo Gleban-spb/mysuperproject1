@@ -1,3 +1,23 @@
+установить git из дистрибутива
+git --version  #Провepил версию
+git config --global user.name "Vasua Pupkin"
+git config --global user.email "VasuaPupkin@vp.ru"
+git config -l
+# Установить имя и емайл пользователя и проверить
+Можно работать локально!!!
+#Создать директорию для хранениния базы данных git
+mkdir mygitdirectory
+#зайти в нее
+cd mygitdirectory/
+#Инициировать базу git
+git init .
+git status
+#проверить статус
+
+
+Если нужна работа через git.com
+Создать ноый аккаунт на git.com
+
 git pull #Загрузил файлы из интернета
 history >hist_20200927.txt #Создал новый файл
 git status #Проверил изменения
