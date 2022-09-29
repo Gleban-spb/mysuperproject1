@@ -1,5 +1,5 @@
 установить git из дистрибутива
-git --version  #Провepил версию
+git --version  #Провepить версию
 git config --global user.name "Vasua Pupkin"
 git config --global user.email "VasuaPupkin@vp.ru"
 git config -l
@@ -18,10 +18,16 @@ git status
 Если нужна работа через git.com
 Создать ноый аккаунт на git.com
 
-git pull #Загрузил файлы из интернета
-history >hist_20200927.txt #Создал новый файл
-git status #Проверил изменения
-git add . #Добавил изменения 
-git commit -m "Добавил историю 20220927"  #Создал новый комит с комментом
-git push origin #Выгрузил изменения в интернет
-git log --pretty=oneline #проверил лог укороченный вариант
+git pull #Загрузить файлы из интернета
+history >hist_20200927.txt #Создать новый файл
+git status #Проверить изменения
+git add . #Добавить изменения 
+git chechout -- <file> #отмена изменений в файле
+git commit -m "Добавил историю 20220927"  #Создать новый комит с комментом (всегда вставлять комментарий!) 
+git push origin #Выгрузить изменения в интернет
+git log --pretty=oneline #проверить лог укороченный вариант
+git log -p полный лог со всеми изменениями 
+git log -1 -p полный лог последнего изменения
+git diff --staged #Показывет последние изменения
+
+в файл .gitignore можно записать файлы , или папки, коорые хотим игнрировать!!! (например *.log  logs/)
