@@ -22,10 +22,8 @@ ssh-keygen
 #Создастся два ключа, нам нужен id_rsa.pub
 cat ~/.ssh/id_rsa.pub
 Копируем содержимое в буфер обмена. Идем на сайт github.com -> Setting-->SSH and GPG keys --> создаем новый SSH key (Title - MyKey BIGcomp, в поле key вставляем текст из буфера обмена)--> Add SSH Key
+git clone git@github.com:Gleban-spb/mysuperproject1.git
 cd ./mysuperproject1
-git remote -v
-git remote set-url origin git@github.com:Gleban-spb/mysuperproject1.git
-git remote -v
 ll
 git status
 
@@ -44,6 +42,12 @@ git diff --staged #Показывет последние изменения
 в файл .gitignore можно записать файлы , или папки, коорые хотим игнрировать!!! (например *.log  logs/)
 
 Загрузка нового проекта из интернета
+
+Удаление локального git
+rm -rf .git
+проверим на отсутсвие файлов
+ls -lah
+pwd - проверка папки в которой находимся
 
 
 
