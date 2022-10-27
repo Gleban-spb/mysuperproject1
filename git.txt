@@ -1,3 +1,5 @@
+https://git-scm.com/docs/
+
 установить git из дистрибутива
 git --version  #Провepить версию
 git config --global user.name "Vasua Pupkin"
@@ -22,10 +24,8 @@ ssh-keygen
 #Создастся два ключа, нам нужен id_rsa.pub
 cat ~/.ssh/id_rsa.pub
 Копируем содержимое в буфер обмена. Идем на сайт github.com -> Setting-->SSH and GPG keys --> создаем новый SSH key (Title - MyKey BIGcomp, в поле key вставляем текст из буфера обмена)--> Add SSH Key
+git clone git@github.com:Gleban-spb/mysuperproject1.git
 cd ./mysuperproject1
-git remote -v
-git remote set-url origin git@github.com:Gleban-spb/mysuperproject1.git
-git remote -v
 ll
 git status
 
@@ -33,7 +33,7 @@ git pull #Загрузить файлы из интернета
 history >hist_20200927.txt #Создать новый файл
 git status #Проверить изменения
 git add . #Добавить изменения 
-git chechout -- <file> #отмена изменений в файле
+git checkout -- file.txt #отмена изменений в файле file.txt
 git commit -m "Добавил историю 20220927"  #Создать новый комит с комментом (всегда вставлять комментарий!) 
 git push origin #Выгрузить изменения в интернет
 git log --pretty=oneline #проверить лог укороченный вариант
@@ -43,8 +43,54 @@ git diff --staged #Показывет последние изменения
 
 в файл .gitignore можно записать файлы , или папки, коорые хотим игнрировать!!! (например *.log  logs/)
 
-Загрузка нового проекта из интернета
+Удаление локального git хранилища
+rm -rf .git
+проверим на отсутсвие файлов
+ls -lah
+pwd - проверка папки в которой находимся
 
 
 
+git reset HEAD~  #удаление  последнего commit'a
 
+Cоздание и работа с branch (windows)
+git init myapp   #C:/Users/admin/myapp/.git/
+cd ./myapp
+git status
+git branch
+echo "Ver1"  >index.html
+dir
+git status
+git add .
+git commit -m "Version1.0"
+git branch
+git log
+echo "Ver2"  >index.html
+git add .
+git commit -m "Version2.0"
+git log
+echo "Ver3"  >index.html
+git add .
+git commit -m "Version3.0"
+git log
+git branch fix_error #создание branch fix_error
+git branch
+git checkout fix_error  #переход в  branch fix_error
+git branch
+git checkout master
+git branch -d fix_error  #удаление branch fix_error
+git branch -D fix_error  #удаление branch fix_error без присоединения к master
+git branch
+git checkout -b new_fix_error  #создание и переход в  branch new_fix_error одной командой
+echo "Ver4"  >index.html
+git add .
+git commit -m "Version4.0"
+git log
+git branch
+dir
+type index.html   #ver4 отредактированный 
+git checkout master
+type index.html   #ver3 оригинальный 
+git merge new_fix_error  #объединение new_fix_error и master
+type index.html   #ver4 стал оригинальным
+git branch -d new_fix_error  #удаление branch new_fix_error
