@@ -3,15 +3,16 @@
 ### Глобальные переменные ###
 #Сохраняем IP-адрес
 IP_ADDRESS=$1
-function ping_host(){
+function ping_host (){
 ping_cmd=$(nmap -sn $IP_ADDRESS | grep 'Host is up' | cut -d '(' -f 1)
 }
-function print_status(){
+function print_status ()
+{
 if [[ -z $ping_cmd ]]
 then
-echo 'Host is down'
+echo 'Host ' $IP_ADDRESS  ' is down'
 else
-echo 'Host is up'
+echo 'Host ' $IP_ADDRESS ' is up'
 fi
 }
 ping_host
