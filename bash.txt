@@ -61,3 +61,7 @@ nmap -T5 -p0-65535 -iL ip.txt -oN home_big.csv - просканровать вс
 одной командой :
 nmap -sn -T4 192.168.0.0-255 -oN home.txt; grep -E -o "([0-9]{1,3}[\.]){3}[0-9]{1,3}" home.txt >ip.txt; nmap -T5 -p0-65535 -iL ip.txt -oN home_big.csv
 exit - выйти из root 
+
+#Монтирование общих папок с windows на даче:
+sudo mount //192.168.2.35/work/   ./mnt/work -t cifs -o user=smb,password=smb,rw,iocharset=utf8,file_mode=0777,dir_mode=0777
+sudo mount //192.168.2.35/video2/   ./mnt/video2 -t cifs -o user=smb,password=smb,rw,iocharset=utf8,file_mode=0777,dir_mode=0777
