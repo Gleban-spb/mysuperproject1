@@ -1,0 +1,16 @@
+  sudo apt install -y docker.io
+  docker ps CONTAINER
+  docker run -h CONTAINER -i -t debian /bin/bash
+  docker ps
+  sudo docker ps
+  docker inspect stupefied_visvesvaraya | grep IPAdress
+   sudo docker inspect stupefied_visvesvaraya | grep IPAddress
+    sudo docker inspect --format {{.NetworkSettings.IPAddress}} stupefied_visvesvaraya
+   sudo docker diff stupefied_visvesvaraya
+   sudo docker ps
+   sudo docker rm  stupefied_visvesvaraya
+   sudo docker ps
+    mkdir docker
+    cd ./docker
+   ls
+
