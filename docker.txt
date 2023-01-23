@@ -12,5 +12,23 @@
    sudo docker ps
     mkdir docker
     cd ./docker
-   ls
+
+#!!!по умолчанию для запуска бинарного файла Docker требуются привилегии суперпользователя!!!
+
+#Правильность установки и работоспособности программной среды 
+docker version
+docker run debian echo "Hello World"
+
+#Запуск Docker без sudo
+sudo usermod -aG docker #Добавление нужного пользователя в группу docker
+sudo service docker restart #перезапустить сервис Docker
+
+#Инициализируем новый контейнер, и зададим для него имя хоста с помощью флага -h:
+docker run -h CONTAINER -i -t debian /bin/bash
+
+#Список всех контейнеров (включая остановленные)
+sudo docker ps -a
+#Удаление всех удаленных контейнеров
+sudo docker rm -v $(sudo docker ps -aq -f status=exited)
+
 
