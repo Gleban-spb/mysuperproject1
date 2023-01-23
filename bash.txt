@@ -65,11 +65,3 @@ exit - выйти из root
 #Монтирование общих папок с windows на даче:
 sudo mount //192.168.2.35/work/   ./mnt/work -t cifs -o user=smb,password=smb,rw,iocharset=utf8,file_mode=0777,dir_mode=0777
 sudo mount //192.168.2.35/video2/   ./mnt/video2 -t cifs -o user=smb,password=smb,rw,iocharset=utf8,file_mode=0777,dir_mode=0777
-
-Установка docker
-apt-get update
-sudo apt install -y docker.io
-Damn Vulnerable Web Application Docker container
-Чертовски уязвимое веб-приложение (DVWA) — это веб-приложение PHP/MySQL, которое чертовски уязвимо. Его основная цель — помочь специалистам по безопасности проверить свои навыки и инструменты в правовой среде, помочь веб-разработчикам лучше понять процессы защиты веб-приложений, а также помочь студентам и преподавателям узнать о безопасности веб-приложений в контролируемом классе. обстановка комнаты.
-
-docker run --rm -it -p 80:80 vulnerables/web-dvwa
