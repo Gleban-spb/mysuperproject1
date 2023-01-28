@@ -1,0 +1,17 @@
+Python: история команд в консоли
+PythonЧто бы просмотреть все введённые ранее команды в консоли Python – есть два варианта.
+
+Первый – выведет список со всеми командами в элементах:
+
+>>> import readline
+>>> for i in range(readline.get_current_history_length()):
+... print readline.get_history_item(i)
+
+Второй – по их номерам:
+
+>>> import readline
+>>> readline.get_current_history_length()
+153
+>>> readline.get_history_item(153)
+'readline.get_current_history_length()'
+-----------------
