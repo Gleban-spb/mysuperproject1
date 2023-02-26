@@ -100,6 +100,20 @@ tri.index(36)
 >>> " and ".join(items)
 'cow and milk and bread and butter'
 
+#Black Hat Python - программирование для хакеров и пентестеров. 2-е изд.2022.Зейтц Джастин, Арнольд Тим
+sudo apt-get install python3.10-venv
+sudo apt update && install python3.10-pip 
+cd bhp
+source venv3/bin/activate   
+python
+pip --version 
+pip list
+deactivate
 
+#Интегрированная среда разработки (integrated development environment, IDE)
+#PyCharm,  Visual Studio Code, WingIDE
+cd ~; cd ./Загрузки/pycharm-community-2022.3.2/bin; ./pycharm.sh   
+
+выражение x += 1, то же что x = x + 1
 
 
