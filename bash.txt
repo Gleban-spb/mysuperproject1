@@ -273,6 +273,7 @@ java
 
 #----------------
 #Инструменты для рботы с сетями
+#https://www.google.com/search?q=what+is+my+ip+add  узнать свой адрес в интернете
 ifconfig #утилита системного администрирования для настройки сетевого интерфейса
 ip addr show
 ping google.com

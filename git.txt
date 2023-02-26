@@ -64,7 +64,7 @@ git status
 git add .
 git commit -m "Version1.0"
 git branch
-git log
+git 
 echo "Ver2"  >index.html
 git add .
 git commit -m "Version2.0"
