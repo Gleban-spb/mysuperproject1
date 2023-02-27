@@ -1,6 +1,6 @@
 шпаргалка по BASH
 Ср 28 сен 2022 21:53:04 MSK
-/home/user/myproject/mysuperproject1
+cd ~/home/user/myproject/mysuperproject1
 
 Лекции - Работа в командной строке BASH (2020)
 Уроки SHELL&BASH 2022
@@ -272,10 +272,13 @@ IP_ADDRESS=$1
 java
 
 #----------------
-#Инструменты для рботы с сетями
+#Инструменты для рботы с сетями Сети для DevOps
 #https://www.google.com/search?q=what+is+my+ip+add  узнать свой адрес в интернете
 ifconfig #утилита системного администрирования для настройки сетевого интерфейса
 ip addr show
+ip link #список интерфесов на устройстве
+ip neighbor show #список соседей
+ip route #показывае мршруты
 ping google.com
 #бескончно до сброса ctl+c
 ping 192.168.2.35 -c 5 -a  -s 1400 #ASUS на даче, размер пакета 1400 5 запросов + пиканье из динамика
@@ -284,6 +287,11 @@ traceroute yandex.ru  #показывает путь
 mtr  yandex.ru #постоянно показывает путь к узлу 
 #пришлось доустанавливать  
 #sudo apt-get install mtr 
+Netplan #управлене сетью рендер конфигурации нужно доустанавливать
+netstat -tulnp #выводит на дисплей состояние TCP-соединений (как входящих, так и исходящих)
+ss #dump socket statistics on Linux systems
+ss -o state established '( dport = :https or sport = :https )'#все установленные соединения по порту :https
+
 sudo tcpdump # выводит описание содержимого пакетов на сетевом интерфейсе - показывает все пакеты
 sudo tcpdum not port 22#запуск на удаленной машине, иначе будет зацикливание с самим запросом
 curl google.com -vvv #инструмент для передачи данных с сервера или на сервер. 
